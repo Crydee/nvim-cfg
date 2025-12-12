@@ -7,4 +7,5 @@ vim.api.nvim_set_hl(0, 'CursorLine', {
     cterm = { underline = true },
 })
 vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 vim.opt.clipboard = "unnamedplus"
