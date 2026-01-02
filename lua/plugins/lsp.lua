@@ -7,7 +7,7 @@ return {
       vim.lsp.config('lua_ls', require('lsp.lua_ls'))
       vim.lsp.enable('lua_ls')
 
-      vim.keymap.set("n", "<space>f", function() vim.lsp.buf.format() end)
+      vim.keymap.set("n", "<space>F", function() vim.lsp.buf.format() end)
 
       vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(args)
