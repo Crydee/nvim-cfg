@@ -9,7 +9,7 @@ return {
 
       vim.keymap.set("n", "<space>f", function() vim.lsp.buf.format() end)
 
-      vim.api.nvim_create_autocmd('LSPAttach', {
+      vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(args)
           local client = vim.lsp.get_client_by_id(args.data.client_id)
           if not client or (vim.bo.filetype ~= "lua") then return end
