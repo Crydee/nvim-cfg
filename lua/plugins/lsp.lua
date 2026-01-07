@@ -6,7 +6,7 @@ return {
       vim.lsp.enable('clangd')
       vim.lsp.config('lua_ls', require('lsp.lua_ls'))
       vim.lsp.enable('lua_ls')
-      vim.lsp.enable('rust-analyzer')
+      vim.lsp.enable('rust_analyzer')
 
       vim.keymap.set("n", "<space>F", function() vim.lsp.buf.format() end)
 
