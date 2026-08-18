@@ -2,11 +2,13 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
+      vim.lsp.config('basedpyright', require('lsp.basedpyright'))
       vim.lsp.enable('basedpyright')
       vim.lsp.enable('clangd')
       vim.lsp.config('lua_ls', require('lsp.lua_ls'))
       vim.lsp.enable('lua_ls')
       vim.lsp.enable('rust_analyzer')
+      vim.lsp.enable('rpmspec')
 
       vim.keymap.set("n", "<space>F", function() vim.lsp.buf.format() end)
 
