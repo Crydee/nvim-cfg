@@ -11,6 +11,7 @@ return {
       vim.lsp.enable('rpmspec')
 
       vim.keymap.set("n", "<space>F", function() vim.lsp.buf.format() end)
+      vim.keymap.set("n", "<space>cn", function() vim.lsp.buf.code_action() end)
 
       vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(args)
