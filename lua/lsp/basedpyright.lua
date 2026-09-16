@@ -1,10 +1,11 @@
 return {
   settings =
   {
-    python = {
+    basedpyright = {
       analysis = {
         typeCheckingMode = "standard",
-      }
+      },
+      disableTaggedHints = false
     }
   }
 }
